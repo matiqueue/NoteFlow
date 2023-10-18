@@ -25,11 +25,11 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
 
 ## ⭐ Liczba gwiazdek
 
-![Liczba gwiazdek](https://img.shields.io/github/stars/matiqueue/NoteFlow?style=social&color=blue)
+![Liczba gwiazdek](https://img.shields.io/github/Gwiazdki/matiqueue/NoteFlow?style=social&color=blue)
 
 ## 📅 Ostatni commit
 
-![Ostatni commit](https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=blue)
+![Ostatni commit](https://img.shields.io/github/Ostatni-Commit/matiqueue/NoteFlow?color=lightgrey)
 
 ## 🛠 Jak zacząć
 
