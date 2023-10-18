@@ -20,17 +20,16 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
 
 ## 📊 Procentowy udział kodu
 
-- JavaScript: ![Procentowy udział kodu](https://img.shields.io/github/languages/top/matiqueue/NoteFlow)
+- JavaScript: ![Procentowy udział kodu](https://img.shields.io/github/languages/top/matiqueue/NoteFlow?color=blue)
 - Inne: ![Procentowy udział kodu](https://img.shields.io/badge/Inne-Y%25-lightgrey)
 
 ## ⭐ Liczba gwiazdek
 
-![Liczba gwiazdek](https://img.shields.io/github/stars/matiqueue/NoteFlow?style=social)
+![Liczba gwiazdek](https://img.shields.io/github/stars/matiqueue/NoteFlow?style=social&color=blue)
 
 ## 📅 Ostatni commit
 
-![Ostatni commit](https://img.shields.io/github/last-commit/matiqueue/NoteFlow)
-
+![Ostatni commit](https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=blue)
 
 ## 🛠 Jak zacząć
 
