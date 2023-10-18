@@ -1,0 +1,26 @@
+{
+  "name": "noteflow",
+  "version": "1.0.0",
+  "description": "Aplikacja do notatek na zywo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiqueue/NoteFlow.git"
+  },
+  "keywords": [
+    "Note",
+    "Online"
+  ],
+  "author": "matiqueue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matiqueue/NoteFlow/issues"
+  },
+  "homepage": "https://github.com/matiqueue/NoteFlow#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
