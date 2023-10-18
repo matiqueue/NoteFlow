@@ -1,4 +1,6 @@
-# NoteFlow 📝
+<img src="img/logo.png" width="100%" height="100%" /># NoteFlow 📝
+
+<img src="./img/logo.png" alt="">
 
 NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.
 
@@ -20,17 +22,23 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
 
 ## 📊 Procentowy udział kodu
 
-- ![JavaScript](https://img.shields.io/github/languages/top/matiqueue/NoteFlow?color=yellow) JavaScript: X%
-- ![Inne Języki](https://img.shields.io/badge/Inne-Y%25-blue) Inne Języki
+- JavaScript: X%
+- HTML: Y%
+- EJS (Embedded JavaScript): Z%
+- Inne: W%
 
-## ⭐ Liczba gwiazdek
-  
-- ![Liczba Gwiazdek](https://img.shields.io/github/stars/matiqueue/NoteFlow?style=social&color=yellow) Liczba Gwiazdek
-
-## 📅 Ostatni commit
-
-- ![Ostatni Commit](https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=blue) Ostatni Commit
-
+<div align="center">
+    <img src="https://img.shields.io/github/languages/top/addi00000/empyrean?color=%23000000">
+    <img src="https://img.shields.io/github/stars/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <br>
+    <img src="https://img.shields.io/github/commit-activity/w/addi00000/empyrean?color=%23000000"> 
+    <img src="https://img.shields.io/github/last-commit/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <br>
+    <img src="https://img.shields.io/github/issues/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues-closed/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <br>
+    Due to constant Discord terminations I will not be making a new support server. For urgent contact: <a href="https://t.me/forrrrrrrrr">Telegram</a>
+</div>
 
 ## 🛠 Jak zacząć
 
