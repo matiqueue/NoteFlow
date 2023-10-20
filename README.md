@@ -28,8 +28,8 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
     <img src="https://img.shields.io/github/languages/top/matiqueue/NoteFlow?color=%23FFA500">
     <img src="https://img.shields.io/github/stars/matiqueue/NoteFlow?color=%2382c202&logoColor=%2382c202">
     <br>
-    <img src="https://img.shields.io/github/commit-activity/w/matiqueue/NoteFlow?color=%23FFA500">
     <img src="https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=%FFFFFFF&logoColor=%FFFFFFF">
+    <img src="https://img.shields.io/github/commit-activity/w/matiqueue/NoteFlow?color=%23FFA500">
 </div>
 
 ## 🛠 Jak zacząć
