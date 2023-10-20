@@ -1,6 +1,8 @@
-<img src="img/logo.png" width="100%" height="100%" /># NoteFlow 📝
+<div align="center">
+    <img src="img/logo.png" width="40%" height="40%" />
+</div>
 
-<img src="./img/logo.png" alt="">
+# NoteFlow 📝
 
 NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.
 
@@ -22,20 +24,15 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
 
 ## 📊 Procentowy udział kodu
 
-- JavaScript: X%
-- HTML: Y%
-- EJS (Embedded JavaScript): Z%
-- Inne: W%
-
 <div align="center">
-    <img src="https://img.shields.io/github/languages/top/addi00000/empyrean?color=%23000000">
-    <img src="https://img.shields.io/github/stars/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/languages/top/matiqueue/NoteFlow?color=%23000000">
+    <img src="https://img.shields.io/github/stars/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
     <br>
-    <img src="https://img.shields.io/github/commit-activity/w/addi00000/empyrean?color=%23000000"> 
-    <img src="https://img.shields.io/github/last-commit/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/commit-activity/w/matiqueue/NoteFlow?color=%23000000"> 
+    <img src="https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
     <br>
-    <img src="https://img.shields.io/github/issues/addi00000/empyrean?color=%23000000&logoColor=%23000000">
-    <img src="https://img.shields.io/github/issues-closed/addi00000/empyrean?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
+    <img src="https://img.shields.io/github/issues-closed/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
     <br>
     Due to constant Discord terminations I will not be making a new support server. For urgent contact: <a href="https://t.me/forrrrrrrrr">Telegram</a>
 </div>
