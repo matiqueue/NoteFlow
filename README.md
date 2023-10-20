@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="img/logo.png" width="40%" height="40%" />
+    <img src="img/logo.png" width="30%" height="30%" />
 </div>
 
 # NoteFlow 📝
@@ -34,7 +34,6 @@ Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby p
     <img src="https://img.shields.io/github/issues/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
     <img src="https://img.shields.io/github/issues-closed/matiqueue/NoteFlow?color=%23000000&logoColor=%23000000">
     <br>
-    Due to constant Discord terminations I will not be making a new support server. For urgent contact: <a href="https://t.me/forrrrrrrrr">Telegram</a>
 </div>
 
 ## 🛠 Jak zacząć
