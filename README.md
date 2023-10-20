@@ -4,7 +4,7 @@
 
 # NoteFlow 📝
 
-<b>NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.<b>
+NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.
 
 ## 🚀 Demo
 
