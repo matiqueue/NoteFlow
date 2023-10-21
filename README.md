@@ -1,7 +1,3 @@
-<div align="center">
-    <img src="img/logo.png" width="30%" height="30%" />
-</div>
-
 # NoteFlow 📝
 
 NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.
@@ -68,3 +64,6 @@ Przed rozpoczęciem korzystania z NoteFlow upewnij się, że masz zainstalowane 
 
 Aplikacja NoteFlow powinna teraz być dostępna pod adresem http://localhost:3000 w Twojej przeglądarce.
 
+<div align="center" background-color="white">
+    <img src="img/logo.png" width="40%" height="40%" />
+</div>
