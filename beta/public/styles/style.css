@@ -1,10 +1,8 @@
-/* Resetowanie marginesów i paddingu dla elementów głównych */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Styl głównego tła strony */
 body {
     background-color: #1a1a1a;
     color: #fff;
@@ -12,14 +10,12 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Styl paska nawigacyjnego */
 .navbar {
     background-color: #333;
     padding: 10px 0;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Styl linków w pasku nawigacyjnym */
 .navbar a {
     color: #fff;
     text-decoration: none;
@@ -27,12 +23,10 @@ body {
     transition: color 0.3s;
 }
 
-/* Styl linków w pasku nawigacyjnym po najechaniu myszką */
 .navbar a:hover {
     color: #ff9900;
 }
 
-/* Styl kontenera */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -41,7 +35,6 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Styl obszaru tekstowego */
 textarea {
     width: 100%;
     min-height: 150px;
@@ -56,13 +49,11 @@ textarea {
     resize: vertical;
 }
 
-/* Styl obszaru tekstowego po uzyskaniu fokusu */
 textarea:focus {
     outline: none;
     border-color: #fff;
 }
 
-/* Animacja migającego kursora */
 .typing-text::after {
     content: "|";
     animation: cursor 0.7s infinite;
@@ -78,7 +69,6 @@ textarea:focus {
     }
 }
 
-/* Styl kontenera obszaru tekstowego */
 .text-area-container {
     display: flex !important;
     overflow: hidden;
@@ -86,12 +76,10 @@ textarea:focus {
     transition: max-height 1s ease-in-out;
 }
 
-/* Aktywny styl kontenera obszaru tekstowego */
 .text-area-container.active {
     max-height: 200px;
 }
 
-/* Styl przycisku udostępniania */
 .share-button {
     background-color: #333;
     color: #fff;
@@ -105,13 +93,11 @@ textarea:focus {
     display: none;
 }
 
-/* Styl przycisku udostępniania po najechaniu myszką */
 .share-button:hover {
     background-color: #fff;
     color: #333;
 }
 
-/* Styl aktywnego przycisku udostępniania */
 .share-button.active {
     animation: appear 1s ease-in-out;
     display: inline-block;
@@ -128,7 +114,6 @@ textarea:focus {
     }
 }
 
-/* Styl stopki */
 .footer {
     text-align: center;
     padding: 10px 0;
@@ -137,7 +122,6 @@ textarea:focus {
     transition: background-color 0.3s, color 0.3s, transform 0.5s;
 }
 
-/* Styl aktywnej stopki */
 .footer.active {
     transform: translateY(0);
 }
