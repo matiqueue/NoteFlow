@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Panel</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <%- include('../../elements_ejs/navbar') %>
+
+    <div class="container">
+        <% if (user && user.pastes && user.pastes.length > 0) { %>
+            <h2>Twoje pasty:</h2>
+            <ul class="paste-list">
+                <% user.pastes.forEach(paste => { %>
+                    <li>
+                        <a href="/<%= paste.link %>"><%= paste.link %></a>
+                        <p class="date-text">Data utworzenia: <%= paste.created_at %></p>
+                        <p class="date-text">Data wygaśnięcia: <%= paste.expires_at %></p>
+                    </li>
+                <% }); %>
+            </ul>
+        <% } %>
+        
+        
+        <h2>Ostatnio dodane pasty:</h2>
+        <ul class="paste-list">
+            <% if (latestPastes && latestPastes.length > 0) { %>
+                <% latestPastes.slice(0, 5).forEach(paste => { %>
+                    <li>
+                        <a href="/<%= paste.link %>"><%= paste.link %></a>
+                        <p class="date-text">Data utworzenia: <%= paste.created_at %></p>
+                        <p class="date-text">Data wygaśnięcia: <%= paste.expires_at %></p>
+                    </li>
+                <% }); %>
+            <% } else { %>
+                <p class="empty-state">Brak dostępnych past.</p>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>

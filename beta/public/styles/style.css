@@ -1,0 +1,143 @@
+/* Resetowanie marginesów i paddingu dla elementów głównych */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styl głównego tła strony */
+body {
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styl paska nawigacyjnego */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styl linków w pasku nawigacyjnym */
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+/* Styl linków w pasku nawigacyjnym po najechaniu myszką */
+.navbar a:hover {
+    color: #ff9900;
+}
+
+/* Styl kontenera */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Styl obszaru tekstowego */
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    resize: vertical;
+}
+
+/* Styl obszaru tekstowego po uzyskaniu fokusu */
+textarea:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+/* Animacja migającego kursora */
+.typing-text::after {
+    content: "|";
+    animation: cursor 0.7s infinite;
+    margin-left: 5px;
+}
+
+@keyframes cursor {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Styl kontenera obszaru tekstowego */
+.text-area-container {
+    display: flex !important;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+}
+
+/* Aktywny styl kontenera obszaru tekstowego */
+.text-area-container.active {
+    max-height: 200px;
+}
+
+/* Styl przycisku udostępniania */
+.share-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Styl przycisku udostępniania po najechaniu myszką */
+.share-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styl aktywnego przycisku udostępniania */
+.share-button.active {
+    animation: appear 1s ease-in-out;
+    display: inline-block;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styl stopki */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s, transform 0.5s;
+}
+
+/* Styl aktywnej stopki */
+.footer.active {
+    transform: translateY(0);
+}

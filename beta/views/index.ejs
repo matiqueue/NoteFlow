@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css"> 
+    <script src="https://kit.fontawesome.com/e51d2bfce2.js" crossorigin="anonymous"></script>
+    <title>Moja Aplikacja</title>
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        textarea {
+            width: 100%;
+            min-height: 150px;
+            padding: 10px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border: 1px solid #555;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+            font-family: "Courier New", monospace;
+            font-size: 18px;
+            resize: vertical;
+        }
+        
+        textarea:focus {
+            outline: none;
+            border-color: #fff;
+        }
+        
+        .typing-text::after {
+            content: "|";
+            animation: cursor 0.7s infinite;
+            margin-left: 5px;
+        }
+        
+        @keyframes cursor {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        
+        .text-area-container {
+            display: flex !important;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 1s ease-in-out;
+        }
+        
+        .text-area-container.active {
+            max-height: 200px;
+        }
+        
+        .share-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .share-button:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        
+        .share-button.active {
+            animation: appear 1s ease-in-out;
+            display: inline-block;
+        }
+        
+        @keyframes appear {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: #fff;
+            transition: background-color 0.3s, color 0.3s, transform 0.5s;
+        }
+        
+        .footer.active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <%- include('../elements_ejs/navbar') %>
+
+    <div class="container">
+        <h1 class="typing-text" style="font-family: 'Times New Roman', serif; margin-bottom: 3%;"></h1>
+        <div class="text-area-container">
+            <textarea id="typed-text" placeholder="Wprowadź swój tekst tutaj" rows="5"></textarea>
+        </div>
+        <div class="button-container">
+            <% if (user) { %>
+                <button class="share-button">Udostępnij Pastę</button>
+            <% } else { %>
+                <button class="share-button" onclick="showLoginAlert()">Zaloguj się, aby udostępnić pastę</button>
+            <% } %>
+        </div>
+    </div>
+    <%- include('../elements_ejs/footer') %>
+    <script>
+        function showLoginAlert() {
+            alert('Zaloguj się, aby udostępnić pastę');
+        }
+
+        var textElement = document.querySelector('.typing-text');
+        var textToType = "Udostępnij pastę wklejając tutaj tekst";
+        var index = 0;
+        var typingSpeed = 70;
+
+        function typeText() {
+            if (index < textToType.length) {
+                textElement.innerHTML += textToType.charAt(index);
+                index++;
+                setTimeout(typeText, typingSpeed);
+            }
+            else {
+                var textareaContainer = document.querySelector('.text-area-container');
+                var textarea = document.getElementById('typed-text');
+                textareaContainer.classList.add('active');
+                textarea.addEventListener('input', function() {
+                    var content = this.value.trim();
+                    var shareButton = document.querySelector('.share-button');
+                    if (content.length >= 10) {
+                        shareButton.classList.add('active');
+                    } else {
+                        shareButton.classList.remove('active');
+                    }
+                });
+
+                var shareButton = document.querySelector('.share-button');
+                shareButton.addEventListener('click', function() {
+                    <% if (user) { %>
+                        var content = textarea.value.trim();
+                        var randomLink = generateRandomLink(5);
+                        sendToServer(content, randomLink);
+                        window.location.href = '/' + randomLink;
+                    <% } %>
+                });
+            }
+        }
+
+        function generateRandomLink(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let randomLink = '';
+
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                randomLink += characters.charAt(randomIndex);
+            }
+
+            return randomLink;
+        }
+
+        function sendToServer(content, link) {
+            fetch('/save', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ content: content, link: link })
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    alert('Pasta została udostępniona. Oto twój link: ' + link);
+                }
+            })
+            .catch(function(error) {
+                console.error('Wystąpił błąd:', error);
+            });
+        }
+
+        window.onload = function() {
+            typeText();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<style>
+    .navbar {
+            background-color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .navbar .left {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar .left a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .navbar .right a {
+            font-family: "Nazwa innej czcionki", sans-serif; 
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .navbar .left a:hover,
+        .navbar .right a:hover {
+            color: #ff9900;
+        }
+        
+        .navbar h1 {
+            margin: 0;
+            text-align: center;
+            flex-grow: 1;
+            font-family: "Times New Roman", serif; 
+            color: #fff;
+            margin-right: 7%;
+        }
+</style>
+
+<div class="navbar">
+    <div class="left">
+        <a href="#">Strona główna</a>
+        <a href="#">Archiwum</a>
+    </div>
+
+    <% if (!user) { %>
+        <a href="/auth/discord">Zaloguj przez Discord</a>
+    <% } else { %>
+        <h1>Witaj, <%= user.username %></h1>
+
+        <div class="right">
+            <a href="/panel">Panel</a>
+            <a href="/logout">Wyloguj</a>
+        </div>
+    <% } %>
+</div>

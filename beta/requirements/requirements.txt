@@ -1,0 +1,12 @@
+electron
+express
+express-session
+passport
+passport-discord
+sqlite3
+ejs
+path
+fs
+body-parser
+moment
+nodemon
