@@ -6,7 +6,7 @@ NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarząd
 
 Zobacz NoteFlow w akcji! Nasze demo umożliwia szybkie zapoznanie się z interfejsem aplikacji oraz podglądem dostępnych funkcji. Kliknij poniższy link, aby rozpocząć demo:
 
-<a href="https://github.com/matiqueue/NoteFlow/tree/main/beta" style="text-decoration: none; font-weight: bold; text-decoration-color: white;">Otwórz demo NoteFlow</a>
+[ <a href="https://github.com/matiqueue/NoteFlow/tree/main/beta" style="text-decoration: none; font-weight: bold; text-decoration-color: white;">Otwórz demo NoteFlow</a> ]
 
 Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby przed rozpoczęciem pełnej instalacji.
 
