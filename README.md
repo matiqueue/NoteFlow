@@ -6,7 +6,7 @@ NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarząd
 
 Zobacz NoteFlow w akcji! Nasze demo umożliwia szybkie zapoznanie się z interfejsem aplikacji oraz podglądem dostępnych funkcji. Kliknij poniższy link, aby rozpocząć demo:
 
-[Otwórz demo NoteFlow](https://noteflow.pl)
+[Otwórz demo NoteFlow]([https://noteflow.pl](https://github.com/matiqueue/NoteFlow/tree/main/beta))
 
 Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby przed rozpoczęciem pełnej instalacji.
 
@@ -50,17 +50,33 @@ Przed rozpoczęciem korzystania z NoteFlow upewnij się, że masz zainstalowane 
    cd noteflow
    ```
 
-3. Zainstaluj zależności przy użyciu npm:
+3. Zainstaluj zależności przy użyciu npm (dla systemów Windows, macOS i Linux):
 
    ```sh
    npm install
    ```
+
+   **LUB** opcjonalnie, jeśli nie masz zainstalowanego npm lub chcesz użyć skryptów instalacyjnych:
+
+   - Na systemie Windows uruchom:
+
+     ```batch
+     install-dependencies.bat
+     ```
+
+   - Na systemach macOS i Linux nadaj uprawnienia do wykonywania skryptu (jeśli to konieczne) i uruchom:
+
+     ```sh
+     chmod +x install-dependencies.sh # (jeśli to konieczne)
+     ./install-dependencies.sh
+     ```
 
 4. Uruchom aplikację:
 
    ```sh
    npm start
    ```
+
 
 Aplikacja NoteFlow powinna teraz być dostępna pod adresem http://localhost:3000 w Twojej przeglądarce.
 
