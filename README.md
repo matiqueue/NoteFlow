@@ -39,19 +39,19 @@ Before you start using NoteFlow, make sure you have the following tools installe
 
 1. Clone the repository to your device:
 
-   ``sh
+   ```sh
    git clone https://github.com/twoj-uzytkownik/noteflow.git
    ```
 
 2. Navigate to the project directory:
 
-   ``sh
+   ```sh
    cd noteflow
    ```
 
 3. Install dependencies using npm (for Windows, macOS and Linux):
 
-   ``sh
+   ```sh
    npm install
    ```
 
@@ -59,20 +59,20 @@ Before you start using NoteFlow, make sure you have the following tools installe
 
    - On Windows run:
 
-     ``batch
+     ```batch
      install-dependencies.bat
      ```
 
    - On macOS and Linux, grant the script permission (if necessary) and run:
 
-     ``sh
+     ```sh
      chmod +x install-dependencies.sh # (if necessary).
      ./install-dependencies.sh
      ```
 
 4. Launch the application:
 
-   ``sh
+   ```sh
    npm start
    ```
 
