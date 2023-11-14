@@ -32,8 +32,8 @@ db.serialize(() => {
 });
 
 passport.use(new DiscordStrategy({
-  clientID: '1157370809283784784',
-  clientSecret: 'zFmZZJxklbGa7Z6qXHepP5udMmGmjceV',
+  clientID: '',
+  clientSecret: '',
   callbackURL: 'http://localhost:3000/auth/discord/callback',
   scope: ['identify', 'email'],
 }, (accessToken, refreshToken, profile, done) => {
