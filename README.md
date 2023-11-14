@@ -1,85 +1,106 @@
 # NoteFlow 📝
 
-NoteFlow to aplikacja umożliwiająca tworzenie notatek online. Ułatwia zarządzanie swoimi notatkami, zapewniając intuicyjny interfejs do dodawania, edytowania i usuwania notatek. Możesz korzystać z NoteFlow zarówno w celach osobistych, jak i zawodowych, aby zachować porządek w swoich myślach.
+NoteFlow is an application that allows you to create notes online. It makes it easy to manage your notes by providing an intuitive interface to add, edit and delete notes. You can use NoteFlow for both personal and professional purposes to keep your thoughts in order.
 
 ## 🚀 Demo
 
-Zobacz NoteFlow w akcji! Nasze demo umożliwia szybkie zapoznanie się z interfejsem aplikacji oraz podglądem dostępnych funkcji. Kliknij poniższy link, aby rozpocząć demo:
+See NoteFlow in action! Our demo gives you a quick look at the application's interface and a preview of available features. Click the link below to start the demo:
 
-[ <a href="https://github.com/matiqueue/NoteFlow/tree/main/Beta-NoteFlow" style="text-decoration: none; font-weight: bold; text-decoration-color: white;">Otwórz demo NoteFlow</a> ]
+[ <a href="https://github.com/matiqueue/NoteFlow/tree/main/Beta-NoteFlow" style="text-decoration: none; font-weight: bold; text-decoration-color: white;">Open NoteFlow demo</a> ].
 
-Dzięki temu demo możesz szybko ocenić, czy NoteFlow spełnia Twoje potrzeby przed rozpoczęciem pełnej instalacji.
+With this demo, you can quickly assess whether NoteFlow meets your needs before starting the full installation.
 
 
-## 🌟 Funkcje
-- 📌 Dodawanie nowych notatek
-- ✏️ Edycja i aktualizacja istniejących notatek
-- 🗑️ Usuwanie notatek
-- 📋 Przeglądanie notatek w formie listy
-- 🖥️ Prosty interfejs użytkownika
+## 🌟 Features
+- 📌 Adding new notes
+- ✏️ Editing and updating existing notes
+- 🗑️ Deleting notes
+- 📋 Viewing notes as a list
+- 🖥️ Simple user interface
 
-## 📊 Procentowy udział kodu
+## 📊 Code percentage
 
 <div align="center">
     <img src="https://img.shields.io/github/languages/top/matiqueue/NoteFlow?color=%23FFA500">
     <img src="https://img.shields.io/github/stars/matiqueue/NoteFlow?color=%FFFFFFF&logoColor=%FFFFFFF">
     <br>
     <img src="https://img.shields.io/github/last-commit/matiqueue/NoteFlow?color=%FFFFFFF&logoColor=%FFFFFFF">
-    <img src="https://img.shields.io/github/commit-activity/w/matiqueue/NoteFlow?color=%23FFA500">
-</div>
+    <img src="https://img.shields.io/github/commit-activity/w/matiqueue/NoteFlow?color=%23FFA500">.
+</div>.
 
-## 🛠 Jak zacząć
+## 🛠 How to get started
 
-### Wymagania wstępne
-Przed rozpoczęciem korzystania z NoteFlow upewnij się, że masz zainstalowane następujące narzędzia:
+
+### Prerequisites
+Before you start using NoteFlow, make sure you have the following tools installed:
+
 
 - Node.js
 - npm (Node Package Manager)
 
-### 📦 Instalacja
 
-1. Sklonuj repozytorium na swoje urządzenie:
+### 📦 Installation
 
-   ```sh
+
+1 Clone the repository to your device:
+
+
+   ``sh
    git clone https://github.com/twoj-uzytkownik/noteflow.git
    ```
 
-2. Przejdź do katalogu projektu:
 
-   ```sh
+2. navigate to the project directory:
+
+
+   ``sh
    cd noteflow
    ```
 
-3. Zainstaluj zależności przy użyciu npm (dla systemów Windows, macOS i Linux):
 
-   ```sh
+3. install dependencies using npm (for Windows, macOS and Linux):
+
+
+   ``sh
    npm install
    ```
 
-   **LUB** opcjonalnie, jeśli nie masz zainstalowanego npm lub chcesz użyć skryptów instalacyjnych:
 
-   - Na systemie Windows uruchom:
+   ** OR** optionally, if you don't have npm installed or want to use installation scripts:
 
-     ```batch
+
+   - On Windows run:
+
+
+     ``batch
      install-dependencies.bat
      ```
 
-   - Na systemach macOS i Linux nadaj uprawnienia do wykonywania skryptu (jeśli to konieczne) i uruchom:
 
-     ```sh
-     chmod +x install-dependencies.sh # (jeśli to konieczne)
+   - On macOS and Linux, grant the script permission (if necessary) and run:
+
+
+     ``sh
+     chmod +x install-dependencies.sh # (if necessary).
      ./install-dependencies.sh
      ```
 
-4. Uruchom aplikację:
 
-   ```sh
+4 Run the application:
+
+
+   ``sh
    npm start
    ```
 
 
-Aplikacja NoteFlow powinna teraz być dostępna pod adresem http://localhost:3000 w Twojej przeglądarce.
 
-<div align="center" background-color="white">
+
+The NoteFlow application should now be available at http://localhost:3000 in your browser.
+
+
+<div align="center" background-color="white">.
     <img src="img/logo.png" width="40%" height="40%" />
 </div>
+
+
